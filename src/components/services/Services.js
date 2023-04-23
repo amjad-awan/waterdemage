@@ -27,7 +27,7 @@ const Services = () => {
               className="text-[#25A52B] mb-[20px]"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[18px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
               Advice and Tips on Water Damage Restoration
             </h2>
             <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
@@ -87,7 +87,7 @@ const Services = () => {
               className="text-[#25A52B] mb-[20px]"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[18px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
             What Rely Causes Water Damage?
             </h2>
                 <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
@@ -159,7 +159,7 @@ const Services = () => {
                 </p>
                 <div className="mt-[20px] justify-self-start">
                   <h5 className="font-[600] uppercase text-[15px] leading-[18px] font-[Quicksand] mt-[15px] text-[#4A4A4A]">
-                    Our restoration typically follows five steps.
+                    Our restoration typically follows five steps:
                   </h5>
 
                   <ul className="justify-self-start list-disc ml-5">
@@ -190,7 +190,7 @@ const Services = () => {
               className="text-[#25A52B] mb-[20px]"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[18px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
             How does the premise’s reconstruction and restoration work?
             </h2>
                 <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
@@ -277,7 +277,7 @@ const Services = () => {
               className="text-[#25A52B] mb-[20px]"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[18px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
             Water-Damage Restoration Tips
             </h2>
                 <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
