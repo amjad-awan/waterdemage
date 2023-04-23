@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import logo from "../../assets/images/24-7 Water Damage Restoration  Inc Logo.png";
+import logo from "../../assets/images/logo.png";
 import MyIcon from "../icon/Icon";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
