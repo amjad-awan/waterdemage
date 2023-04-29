@@ -40,10 +40,10 @@ const Slider = () => {
 
   return (
     <div className="container mt-[70px] mx-auto min-h-[600px]">
-      <h1 className="font-[600] text-[30px] mt-9 text-center">
+      <h1 className="font-[600] text-[30px] wow fadeInUp  delay-0-2s mt-9 text-center">
         What Our customer say about us{" "}
       </h1>
-      <div className="h-[2px] mx-auto mt-[10px] max-w-[300px] bg-[#fed03d]"></div>
+      <div className="h-[2px] mx-auto mt-[10px] wow fadeInUp  delay-0-2s s max-w-[300px] bg-[#fed03d]"></div>
 
       <Swiper
         slidesPerView={1}
@@ -84,7 +84,7 @@ const Slider = () => {
           />
         </SwiperButtonPrev>
 
-        <SwiperSlide className="min-h-[300px] rounded border border-gray-100">
+        <SwiperSlide className="min-h-[300px] wow fadeInUp  delay-0-2s rounded border border-gray-100">
           <div className="min-h-[300px] relative rounded shadow-md p-8">
             <Icon
               icon="iconoir:quote"
@@ -122,8 +122,8 @@ const Slider = () => {
             </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] rounded border border-gray-100">
-        <div className="min-h-[300px] relative rounded shadow-md p-8">
+        <SwiperSlide className="min-h-[300px] wow fadeInUp  delay-0-4s rounded border border-gray-100">
+          <div className="min-h-[300px] relative rounded shadow-md p-8">
             <Icon
               icon="iconoir:quote"
               fontSize="70px"
@@ -165,8 +165,53 @@ const Slider = () => {
             </p>
           </div>
         </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] rounded border border-gray-100">
-        <div className="min-h-[300px] relative rounded shadow-md p-8">
+        <SwiperSlide className="min-h-[300px] wow fadeInUp  delay-0-2s rounded border border-gray-100">
+          <div className="min-h-[300px] relative rounded shadow-md p-8">
+            <Icon
+              icon="iconoir:quote"
+              fontSize="70px"
+              className="absolute text-gray-100 top-[20px] right-[20px]"
+            />
+            <div className="flex items-center gap-5 mb-7">
+              <Image
+                src={customer1Image}
+                height={100}
+                width={100}
+                className="rounded-[50%] ] h-[70px] w-[70px] object-cover"
+              />
+              <div>
+                <p className="font-[500] text-[22px] p-0">Olga B.</p>
+                <div className="flex">
+                  {[1, 2, 3, 4, 5].map((item, index) => {
+                    return (
+                      <Icon
+                        key={index}
+                        icon="material-symbols:star-rounded"
+                        color="#fed03d"
+                        fontSize="30px"
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+
+            <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[15px] font-[400]">
+              I had water damage from the leaky roof after the rain season and a
+              friend recommended me Scope Environmental Remediation. I had very
+              good experience working with them, they are very professional and
+              take pride in their work. What I especially liked is that they
+              take the job and do it from start to finish, you don’t have to act
+              as a general contractor looking for different vendors. Veronika is
+              very good in explaining details, and their team of workers is
+              doing outstanding job. On the top of it all, everyone I came in
+              contact with was very courteous and easy to deal with. I will
+              definitely use them again and will recommend them to my friends
+            </p>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="min-h-[300px] wow fadeInUp  delay-0-4s rounded border border-gray-100">
+          <div className="min-h-[300px] relative rounded shadow-md p-8">
             <Icon
               icon="iconoir:quote"
               fontSize="70px"
@@ -211,52 +256,7 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="min-h-[300px] rounded border border-gray-100">
-        <div className="min-h-[300px] relative rounded shadow-md p-8">
-            <Icon
-              icon="iconoir:quote"
-              fontSize="70px"
-              className="absolute text-gray-100 top-[20px] right-[20px]"
-            />
-            <div className="flex items-center gap-5 mb-7">
-              <Image
-                src={customer1Image}
-                height={100}
-                width={100}
-                className="rounded-[50%] ] h-[70px] w-[70px] object-cover"
-              />
-              <div>
-                <p className="font-[500] text-[22px] p-0">Olga B.</p>
-                <div className="flex">
-                  {[1, 2, 3, 4, 5].map((item, index) => {
-                    return (
-                      <Icon
-                        key={index}
-                        icon="material-symbols:star-rounded"
-                        color="#fed03d"
-                        fontSize="30px"
-                      />
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-
-            <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[15px] font-[400]">
-              I had water damage from the leaky roof after the rain season and a
-              friend recommended me Scope Environmental Remediation. I had very
-              good experience working with them, they are very professional and
-              take pride in their work. What I especially liked is that they
-              take the job and do it from start to finish, you don’t have to act
-              as a general contractor looking for different vendors. Veronika is
-              very good in explaining details, and their team of workers is
-              doing outstanding job. On the top of it all, everyone I came in
-              contact with was very courteous and easy to deal with. I will
-              definitely use them again and will recommend them to my friends
-            </p>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="min-h-[300px] rounded border border-gray-100">
-        <div className="min-h-[300px] relative rounded shadow-md p-8">
+          <div className="min-h-[300px] relative rounded shadow-md p-8">
             <Icon
               icon="iconoir:quote"
               fontSize="70px"

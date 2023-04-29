@@ -8,7 +8,7 @@ const WhyChoose = () => {
         <h3 className="text-[24px] font-[600]  wow fadeInUp  delay-0-2s leading-[29px] uppercase">
           WHY CHOOSE US?
         </h3>
-        <div className="h-[2px] mx-auto  mt-[10px] max-w-[300px]  wow fadeInUp  delay-0-4s bg-[#fed03d]"></div>
+        <div className="h-[2px] mx-auto  mt-[10px] max-w-[300px] wow fadeInUp  delay-0-2s bg-[#fed03d]"></div>
         <p className="text-[18]  wow fadeInUp  delay-0-6s font-[500] mt-[40px] leading-[29px] uppercase">
           HERE ARE JUST A FEW REASONS TO CHOOSE SCOPE ENVIRONMENTAL AS YOUR FIRE
           DAMAGE SPECIALISTS.
