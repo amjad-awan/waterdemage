@@ -13,24 +13,24 @@ const Services = () => {
   };
   return (
     <div className="mx-auto container  mt-12">
-      <h5 className="font-[700] mb-10 text-center text-[24px] text-[#25A52B]">
+      <h5 className="font-[800] wow fadeInUp  delay-0-2s   mb-10 text-center text-[44px] text-[#25A52B]">
         SERVICES
       </h5>
 
       <div className="grid gap-5 rounded grid-cols-1">
-        <div className="p-[24px] flex justify-center items-center shadow-md transition-all ease-linear duration-300 hover:shadow-lg flex-col bg-[#ffff] rounded-[6px]">
+        <div className="p-[24px] flex  justify-center items-center shadow-md transition-all ease-linear duration-300 hover:shadow-lg flex-col bg-[#ffff] rounded-[6px]">
           {/* <Image alt="service" src={service1} width={100} height={100} /> */}
          
           <Icon
               icon="lucide:archive-restore"
               fontSize="100px"
-              className="text-[#25A52B] mb-[20px]"
+              className="text-[#25A52B] mb-[20px] wow fadeInUp  delay-0-2s"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[600] wow fadeInUp delay-0-4s uppercase text-center text-[22px] leading-[30px] text-[#25A52B]">
               Advice and Tips on Water Damage Restoration
             </h2>
-            <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+            <p className="font-[Quicksand] mt-[15px] wow fadeInUp delay-0-6s text-[#4A4A4A] text-[16px]">
               Getting your business, home or any other institution back on track
               after water tragedies is a process that requires immediate
               intervention. That is why we can ensure that your work resumes
@@ -72,7 +72,7 @@ const Services = () => {
           {openAll ? null : (
             <button
               onClick={handleClick}
-              className="font-[Oswald] mt-10 text-[20px] transition-all ease-linear duration-300 hover:shadow-lg shadow-[#25A52B] rounded-[4px] font-[600] bg-[#25A52B] px-[30px] py-[10px] text-[#ffff] uppercase"
+              className="font-[Oswald] wow fadeInUp  delay-0-2s  mt-10 text-[20px] transition-all ease-linear duration-300 hover:shadow-lg shadow-[#25A52B] rounded-[4px] font-[600] bg-[#25A52B] px-[30px] py-[10px] text-[#ffff] uppercase"
             >
               continue
             </button>
@@ -84,13 +84,13 @@ const Services = () => {
             <Icon
               icon="la:house-damage"
               fontSize="100px"
-              className="text-[#25A52B] mb-[20px]"
+              className="text-[#25A52B] mb-[20px] wow fadeInUp  delay-0-2s"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[600] uppercase text-center wow fadeInUp  delay-0-4s  text-[22px] leading-[30px] text-[#25A52B]">
             What Rely Causes Water Damage?
             </h2>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Water is a friendly master, but it can result in huge damage
                   when it is not controllable. Flooding, which results from
                   heavy rain and the wind, is one of the most common causes of
@@ -104,7 +104,7 @@ const Services = () => {
                   anticipated or assumed, like forgetting and leaving the taps
                   running. Can’t I Just Fix My Water damage tragedies?
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   This option might seem attractive and cost-friendly, but the
                   worst of this damage is typically the one that cannot be seen
                   through the naked eye. We understand that you can remove
@@ -124,7 +124,7 @@ const Services = () => {
                   and compensation simpler for you.How Do the Water Damage
                   Restoration Pro’s Professionals Help?
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Immediately we arrive at your premises and perform a thorough
                   inspection. We start by inspecting the possible cause of water
                   flow, how to stop it and the nature of the materials on the
@@ -134,7 +134,7 @@ const Services = () => {
                   sensors that can view moisture levels in underfloor, behind
                   walls and in the ceiling.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Once we have identified the possible cause of the water, we
                   liaise together on a specific plan depending on the situation.
                   The first step in the unique specific plan often involves
@@ -187,13 +187,13 @@ const Services = () => {
               <Icon
               icon="ion:construct-sharp"
               fontSize="100px"
-              className="text-[#25A52B] mb-[20px]"
+              className="text-[#25A52B] mb-[20px] wow fadeInUp  delay-0-2s"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[600] uppercase text-center wow fadeInUp  delay-0-4s  text-[22px] leading-[30px] text-[#25A52B]">
             How does the premise’s reconstruction and restoration work?
             </h2>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   In our restoration process, we comprehensively follow the five
                   steps to ensure that we normalize your activities. First, our
                   team of professionals starts by thoroughly inspecting the
@@ -216,7 +216,7 @@ const Services = () => {
                   sensitive to water which can result in other risks and
                   dangers.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   This option might seem attractive and cost-friendly, but the
                   worst of this damage is typically the one that cannot be seen
                   through the naked eye. We understand that you can remove
@@ -236,14 +236,14 @@ const Services = () => {
                   and compensation simpler for you.How Do the Water Damage
                   Restoration Pro’s Professionals Help?
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Once that is done, the cleaning and sanitizing the damaged
                   area start. This involves thoroughly cleaning the damaged
                   premises by ensuring no dirt is left. After that, water damage
                   repairs begin, where we ensure that everything is brought back
                   to its place as you watch and direct.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Done right, the full restoration involves reconstruction, like
                   drying the walls and also applying some paints. Since we apply
                   client-centered services, we will ensure that you’re
@@ -254,14 +254,14 @@ const Services = () => {
                   includes informing us whether there is a stale or musty smell
                   in the air, indicating rotting wood.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   As we leave the premise, we also guide you to notify us if an
                   area indicates remaining water by checking different signs.
                   This includes a change in texture and color of floor, walls
                   and other premises property as that is one of our principle of
                   ensuring that it does not happen.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                   Our organization’s main goal is to provide a water tragic
                   damage restoration service that will surpass your expectations
                   by ensuring the immediate resumption of your normal activities
@@ -274,21 +274,21 @@ const Services = () => {
             <Icon
               icon="material-symbols:water-full"
               fontSize="100px"
-              className="text-[#25A52B] mb-[20px]"
+              className="text-[#25A52B] mb-[20px] wow fadeInUp  delay-0-2s"
             />
           <div className="mt-[20px]">
-            <h2 className="mb-[25px] font-[800] uppercase text-center text-[25px] leading-[30px] text-[#25A52B]">
+            <h2 className="mb-[25px] font-[600] uppercase text-center wow fadeInUp  delay-0-4s  text-[22px] leading-[30px] text-[#25A52B]">
             Water-Damage Restoration Tips
             </h2>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                 Restoring to the norm after a water disaster can be hectic. Depending on the water level, it can cause a lot of damage leading to huge losses. However, applying the appropriate organizational knowledge, skills, and technology can help recover easier and quicker.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                 Restoring to the norm after a water disaster can be hectic. Depending on the water level, it can cause a lot of damage leading to huge losses. However, applying the appropriate organizational knowledge, skills, and technology can help recover easier and quicker.
 Water tragedies can arise from various flooding factors like heavy storms, tree damage, plumbing fixtures, broken pipes and unavoidable natural disasters. Hiring the right team with modern water restoration technology like dehumidifiers, fans, heaters, floor driers, blowers, and water extractors.
 Hiring a team of professionals with experience and training from organizations like EPA, IICRC and State Contractors Board is also advisable to effectively and quickly respond to your damage loss.
                 </p>
-                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px]">
+                <p className="font-[Quicksand] mt-[15px] text-[#4A4A4A] text-[16px] wow fadeInUp  delay-0-6s ">
                 After this damage restoration, it’s worth inspecting the post damages like changes in texture and color of the floor, walls and other premises property.
 Of all the damages from water, don’t risk your life, the life of others and your property, as there might be more dangers in the restoration. For instance, it is not advisable to carry out this process on your own as it might lead to more damage, like electrocution.
 In case you have any damages from water, worry no more don’t hesitate to inform us for quick restoration and recovery.

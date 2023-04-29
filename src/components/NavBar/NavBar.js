@@ -8,170 +8,149 @@ import { Icon } from "@iconify/react";
 const NavBar = () => {
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-    window.onload = function () {
-      const toggle = document.querySelector(".toggle");
-      const menu = document.querySelector(".menu");
-      const items = document.querySelectorAll(".item");
-console.log("toggle", toggle)
-      /* Toggle mobile menu */
-      function toggleMenu() {
-        if (menu.classList.contains("active")) {
-          menu.classList.remove("active");
-          toggle.querySelector("span").innerHTML = "<i class='fas fa-bars'></i>";
-        } else {
-          menu.classList.add("active");
-          toggle.querySelector("span").innerHTML = "<i class='fas fa-times'></i>";
-        }
-      }
-
-      /* Activate Submenu */
-      function toggleItem() {
-        if (this.classList.contains("submenu-active")) {
-          this.classList.remove("submenu-active");
-        } else if (menu.querySelector(".submenu-active")) {
-          menu
-            .querySelector(".submenu-active")
-            .classList.remove("submenu-active");
-          this.classList.add("submenu-active");
-        } else {
-          this.classList.add("submenu-active");
-        }
-      }
-
-      /* Close Submenu From Anywhere */
-      function closeSubmenu(e) {
-        if (menu.querySelector(".submenu-active")) {
-          let isClickInside = menu
-            .querySelector(".submenu-active")
-            .contains(e.target);
-
-          if (!isClickInside && menu.querySelector(".submenu-active")) {
-            menu
-              .querySelector(".submenu-active")
-              .classList.remove("submenu-active");
-          }
-        }
-      }
-      /* Event Listeners */
-       toggle.addEventListener("click", toggleMenu, false);
-      for (let item of items) {
-        if (item.querySelector(".submenu")) {
-          item.addEventListener("click", toggleItem, false);
-        }
-        item.addEventListener("keypress", toggleItem, false);
-      }
-      document.addEventListener("click", closeSubmenu, false);
-    };
-  }, []);
-
-  if (!isMounted) {
-    return null; // Don't render on the server
-  }
   return (
-    // <div className="flex items-center justify-center bg-white w-[100%] border">
-    //     <div className="container flex items-center mx-auto gap-[100px] font-[600]">
-    //   <div className="logo py-2">
-    //     <Image
-    //       src={logo}
-    //       alt="logo"
-    //       className="w-[100px] h-[100px] object-contain"
-    //     />
-    //   </div>
-    //   <div className="flex flex-col w-[100%]">
-    //     <div className="flex items-center justify-between text-[#009BCE]">
-    //       <p className="font-[600] leading-[26px] flex items-center gap-[10px]">
-    //         <MyIcon icon="mdi:map-marker" />
-    //         Serving All of Los Angeles and Ventura County
-    //       </p>
+ 
 
-    //       <a
-    //         className="flex items-center justify-between] gap-[10px]"
-    //         href="tel:(855) 961 – 2660"
-    //       >
-    //         <MyIcon icon="material-symbols:call" />
-    //         (855) 961 – 2660
-    //       </a>
-    //     </div>
-    //     <div className="bg-[#009BCE] mt-[10px]  h-[40px] px-[20px] flex items-center justify-between] gap-[10px]">
-    //       <Link href="/" className="text-[#fff] text-[20px] w-[50px]">
-    //         <MyIcon icon="ion:home" />
-    //       </Link>
-    //       <Link href="/" className="text-[#fff] uppercase font-[400] text-[15px] min-w-[100px]">
-    //         Services
-    //       </Link>
-    //       <Link href="/" className="text-[#fff] uppercase font-[400] text-[15px] min-w-[100px]">
-    //        Gallery
-    //       </Link>
-    //       <Link href="/" className="text-[#fff] uppercase font-[400] text-[15px] min-w-[100px]">
-    //        About us
-    //       </Link>
-    //       <Link href="/" className="text-[#fff] uppercase font-[400] text-[15px] min-w-[100px]">
-    //        insurance
-    //       </Link>
-    //     </div>
-    //   </div>
-    // </div>
-    // </div>
-    <nav className="relative flex justify-between">
-       <a href="#" className="sm:absolute w-[200px] h-[100px] top-[20px] lg:relative ">
-            <Image
-              src={logo}
-              alt="logo"
-              className="h-[70px] w-[100px] object-contain"
-            />
+    <div className="mx-auto">
+      <nav className="border-gray-200 py-3 bg-[#009BCE]">
+        <div className="container mx-auto px-[20px] flex flex-wrap items-center justify-between">
+          <a href="#" className="flex">
+          <img src="/images/logo.png" alt="" className="h-[100px]"/>
+           
           </a>
-      <ul className="menu sm:mt-[50px]  lg:mt-0 relative md:leading-[70px] flex justify-between items-center">
-        {/* <li className="logo">
-          <a href="#">
-            {" "}
-            <Image
-              src={logo}
-              alt="logo"
-              className="h-[100px] w-[100px] object-contain"
-            />{" "}
-          </a>
-        </li> */}
-        <li className="item">
-          <a href="#">Home</a>
-        </li>
-        <li className="item">
-          <a href="#">About</a>
-        </li>
-        <li className="item has-submenu">
-          <a tabindex="0">
-            Services <Icon icon="mdi:chevron-down" />
-          </a>
-          <ul className="submenu">
-            <li className="subitem">
-              <a href="#" className="leading-[20px]">Dallas</a>
-            </li>
-            <li className="subitem">
-              <a href="#" className="leading-[20px]">Houston</a>
-            </li>
-            <li className="subitem">
-              <a href="#" className="leading-[20px]">Miami</a>
-            </li>
-          </ul>
-        </li>
-        <li className="item has-submenu">
-          <a tabindex="0">Plans</a>
-        </li>
-        <li className="item">
-          <a href="#">Blog</a>
-        </li>
-        <li className="item">
-          <a href="#">Contact</a>
-        </li>
-
-        <li className="toggle"  >
-          <span >
-            <i class="fas fa-bars"></i>
-          </span>
-        </li>
-      </ul>
-    </nav>
+          <button
+            data-collapse-toggle="mobile-menu"
+            type="button"
+            className="md:hidden ml-3 text-[#fff] focus:outline-none p-1 border ring-2 ring-[#fff] rounded-lg inline-flex items-center justify-center"
+            aria-controls="mobile-menu-2"
+            aria-expanded="false"
+          >
+            <span className="sr-only">Open main menu</span>
+            <svg
+              className="w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <svg
+              className="hidden w-6 h-6"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+          <div className="hidden md:block w-full md:w-auto" id="mobile-menu">
+            <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-[600]">
+              <li>
+                <a
+                  href="#"
+                  className="text-[#fff] hover:text-[#25A52B] font-[Quicksand] uppercase decoration-none  md:hover:bg-transparent block pl-3 pr-4 py-2 text-[18px]  md:p-0"
+                  aria-current="page"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <button
+                  id="dropdownNavbarLink"
+                  data-dropdown-toggle="dropdownNavbar"
+                  className="text-[#fff] hover:text-[#25A52B] font-[Quicksand] uppercase decoration-none text-[18px] border-gray-100 md:hover:bg-transparent  pl-3 pr-4 py-2  md:p-0 font-[600] flex items-center justify-between w-full md:w-auto"
+                >
+                  Location
+                  <svg
+                    className="w-4 h-4 ml-1"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </button>
+                <div
+                  id="dropdownNavbar"
+                  className="hidden  md:pt-[0px] lg:pt-[40px] text-base z-10 list-none divide-y divide-gray-100 rounded   w-44"
+                >
+                  <ul className="py-1 bg-white relative drop-down-triangle" aria-labelledby="dropdownLargeButton">
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                      >
+                        Dallas
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                      >
+                        Houston
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                      >
+                        Miami
+                      </a>
+                    </li>
+                  </ul>
+                  {/* <div className="py-1">
+                    <a
+                      href="#"
+                      className="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2"
+                    >
+                      Sign out
+                    </a>
+                  </div> */}
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#fff] hover:text-[#25A52B] font-[Quicksand] uppercase decoration-none  md:hover:bg-transparent block pl-3 pr-4 py-2 text-[18px]  md:p-0"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#fff] hover:text-[#25A52B] font-[Quicksand] uppercase decoration-none  md:hover:bg-transparent block pl-3 pr-4 py-2 text-[18px]  md:p-0"
+                >
+                  Pricing
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-[#fff] hover:text-[#25A52B] font-[Quicksand] uppercase decoration-none  md:hover:bg-transparent block pl-3 pr-4 py-2 text-[18px]  md:p-0"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
   );
 };
 

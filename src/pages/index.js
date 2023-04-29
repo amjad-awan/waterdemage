@@ -7,7 +7,10 @@ import Hero from '@/components/Hero/Hero';
 import Services from '@/components/services/Services';
 import WhyChoose from '@/components/whyChoose/WhyChoose';
 import Slider from '@/components/Slider/Slider';
+import Footer from '@/components/footer/Footer';
+import Counter from '@/components/counter/index.js';
 const NavBar = dynamic(() => import('@/components/NavBar/NavBar'));
+const BgImage = dynamic(() => import('@/components/bigImage/BgImage'));
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,9 +26,12 @@ export default function Home() {
       <main >
       <NavBar/>
       <Hero/>
+      <Counter/>
       <Services/>
+      <BgImage/>
       <WhyChoose/>
       <Slider/>
+      <Footer/>
       </main>
     </>
   )
